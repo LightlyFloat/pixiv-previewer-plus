@@ -5,12 +5,12 @@
 // @name:zh-CN          Pixiv Previewer Plus
 // @name:zh-TW          Pixiv Previewer Plus
 // @namespace           https://github.com/LightlyFloat/pixiv-previewer-plus
-// @version             3.8.7+plus.17
-// @description         Display preview images (support single image, multiple images, moving images); Download animation(.zip); Sorting the search page by favorite count(and display it). Plus edition extends favorite count sorting to user pages and bookmark pages for both illustrations/manga and novels, with separate sorting settings for each of the six page and content combinations. Favorite count badges are also shown without sorting on thumbnails of search, following, discovery, user, new illustrations, bookmark pages and artwork page recommendations.
+// @version             3.8.7+plus.18
+// @description         Display preview images (support single image, multiple images, moving images); Download animation(.zip); Sorting the search page by favorite count(and display it). Plus edition extends sorting to user and bookmark pages for illustrations/manga and novels, with separate settings for six page and content combinations. Favorite counts are also shown without sorting on thumbnails of search, following, discovery, user, new illustrations, bookmark pages and artwork recommendations.
 // @description:zh-CN   显示预览图（支持单图，多图，动图）；动图压缩包下载；搜索页按热门度（收藏数）排序并显示收藏数。Plus 版本将收藏数排序扩展至用户页与收藏页，覆盖插画漫画与小说，六种页面与内容组合各有独立的排序设置；不排序时也在搜索页、关注页、发现页、用户页、大家的新作品页、收藏页与作品页相关推荐的缩略图上显示收藏数。
 // @description:ja      プレビュー画像の表示（単一画像、複数画像、動画のサポート）; アニメーションのダウンロード（.zip）; お気に入りの数で検索ページをソートします（そして表示します）。Plus 版はお気に入り数による並べ替えをユーザーページとブックマークページに拡張し、イラスト・漫画と小説の両方に対応、6 つのページと作品種別の組み合わせごとに独立したソート設定を備えます。ソートしない場合も、検索・フォロー・発見・ユーザー・新着・ブックマークの各ページと作品ページのおすすめのサムネイルにお気に入り数を表示します。
 // @description:zh-TW   顯示預覽圖像（支持單幅圖像，多幅圖像，運動圖像）； 下載動畫（.zip）; 按收藏夾數對搜索頁進行排序（並顯示）。Plus 版本將收藏數排序擴展至使用者頁與收藏頁，涵蓋插畫漫畫與小說，六種頁面與內容組合各有獨立的排序設定；不排序時也在搜尋頁、關注頁、發現頁、使用者頁、大家的新作品頁、收藏頁與作品頁相關推薦的縮圖上顯示收藏數。
-// @description:ru      Отображение превью изображений (поддержка одиночных, множественных и анимированных изображений); Скачивание анимаций (.zip); Сортировка страницы поиска по количеству добавлений в закладки (с отображением количества). В версии Plus сортировка по количеству добавлений в закладки распространена на страницы пользователей и страницы закладок для иллюстраций, манги и новелл, с отдельными настройками для каждой из шести комбинаций страниц и типов работ. Количество добавлений в закладки также отображается без сортировки на миниатюрах страниц поиска, подписок, обзора, пользователей, новых работ, закладок и рекомендаций на странице работы.
+// @description:ru      Отображение превью изображений (поддержка одиночных, множественных и анимированных изображений); Скачивание анимаций (.zip); Сортировка страницы поиска по количеству добавлений в закладки (с отображением количества). Plus: сортировка также на страницах пользователей и закладок для иллюстраций, манги и новелл, шесть независимых наборов настроек; число закладок без сортировки видно на миниатюрах поиска, подписок, обзора, пользователей, новых работ, закладок и рекомендаций.
 // @author              Ocrosoft, lfloat
 // @match               *://www.pixiv.net/*
 // @grant               unsafeWindow
@@ -33,9 +33,9 @@
  * 基线版本：3.8.7
  * 基线获取日期：2026-09-29
  * 基线来源：https://raw.githubusercontent.com/Ocrosoft/PixivPreviewer/master/pixiv%20previewer.user.js
- * 本文件修改日期：2026-10-06
+ * 本文件修改日期：2026-10-07
  *
- * 版本号 3.8.7+plus.17 中，前段标明所基于的上游版本，后段为本项目的迭代序号。
+ * 版本号 3.8.7+plus.18 中，前段标明所基于的上游版本，后段为本项目的迭代序号。
  * 相对上游 3.8.7 的功能改动如下，其余代码与上游一致：
  * - 界面内显示名称改为 Pixiv Previewer Plus，含设置面板标题与安装欢迎页标题
  * - 取回作品收藏数时补上 HTTP 状态码判定，对 429、5xx 与网络层失败退避重试，并发自适应下调，
