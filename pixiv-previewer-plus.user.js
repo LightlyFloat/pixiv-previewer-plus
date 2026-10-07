@@ -5,7 +5,7 @@
 // @name:zh-CN          Pixiv Previewer Plus
 // @name:zh-TW          Pixiv Previewer Plus
 // @namespace           https://github.com/LightlyFloat/pixiv-previewer-plus
-// @version             3.8.7+plus.19
+// @version             3.8.7+plus.20
 // @description         显示预览图（支持单图，多图，动图）；动图压缩包下载；搜索页按热门度（收藏数）排序并显示收藏数。Plus 版本将收藏数排序扩展至用户页与收藏页，覆盖插画漫画与小说，六种页面与内容组合各有独立的排序设置；不排序时也在搜索页、关注页、发现页、用户页、大家的新作品页、收藏页与作品页相关推荐的缩略图上显示收藏数。
 // @description:en      Display preview images (support single image, multiple images, moving images); Download animation(.zip); Sorting the search page by favorite count(and display it). Plus edition extends sorting to user and bookmark pages for illustrations/manga and novels, with separate settings for six page and content combinations. Favorite counts are also shown without sorting on thumbnails of search, following, discovery, user, new illustrations, bookmark pages and artwork recommendations.
 // @description:ja      プレビュー画像の表示（単一画像、複数画像、動画のサポート）; アニメーションのダウンロード（.zip）; お気に入りの数で検索ページをソートします（そして表示します）。Plus 版はお気に入り数による並べ替えをユーザーページとブックマークページに拡張し、イラスト・漫画と小説の両方に対応、6 つのページと作品種別の組み合わせごとに独立したソート設定を備えます。ソートしない場合も、検索・フォロー・発見・ユーザー・新着・ブックマークの各ページと作品ページのおすすめのサムネイルにお気に入り数を表示します。
@@ -34,8 +34,9 @@
  * 基线获取日期：2026-09-29
  * 基线来源：https://raw.githubusercontent.com/Ocrosoft/PixivPreviewer/master/pixiv%20previewer.user.js
  * 本文件修改日期：2026-10-07
+ * 发布渠道：Greasy Fork 未列出脚本，经发布仓库 https://github.com/LightlyFloat/pixiv-previewer-plus 以 webhook 同步
  *
- * 版本号 3.8.7+plus.19 中，前段标明所基于的上游版本，后段为本项目的迭代序号。
+ * 版本号 3.8.7+plus.20 中，前段标明所基于的上游版本，后段为本项目的迭代序号。
  * 相对上游 3.8.7 的功能改动如下，其余代码与上游一致：
  * - 界面内显示名称改为 Pixiv Previewer Plus，含设置面板标题与安装欢迎页标题
  * - 取回作品收藏数时补上 HTTP 状态码判定，对 429、5xx 与网络层失败退避重试，并发自适应下调，
